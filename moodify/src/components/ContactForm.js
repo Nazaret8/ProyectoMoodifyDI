@@ -26,6 +26,7 @@ export default function ContactForm() {
     setIsSubmitting(true);
   
     const templateParams = {
+      to_name: `${formData.firstName} ${formData.lastName}`,
       firstName: formData.firstName,
       lastName: formData.lastName,
       email: formData.email,
@@ -213,6 +214,12 @@ export default function ContactForm() {
                 type="submit"
                 disabled={isSubmitting}
                 className="btn fw-bold px-4 py-2 btn-contact"
+                style={{
+                  backgroundColor: "#443B5C", 
+                  borderRadius: "15px",       
+                  color: "white",           
+                  border: "none",            
+                }}
               >
                 {isSubmitting ? (
                   <div className="spinner-border text-light" role="status">
