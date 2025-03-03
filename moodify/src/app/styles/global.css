@@ -1,0 +1,360 @@
+.custom-btn:hover {
+  background-color: #d781ff !important;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.music-player {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 10px;
+    background-color: #220039;
+    color: white;
+    gap: 20px;
+  }
+  
+  .song-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .controls-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .playback-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .progress-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .volume-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-link {
+  color: #FFFFFF !important; 
+  font-weight: bold;
+  text-decoration: none; 
+  transition: color 0.3s ease-in-out; 
+}
+
+.nav-menu {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-link:hover {
+  color: #A97CD5 !important; 
+}
+
+.menu-open-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.menu-open-hidden {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none; 
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px; 
+}
+
+.nav-item {
+  white-space: nowrap; 
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #ECE6F0;
+  border-radius: 25px;
+  padding: 5px 15px;
+  width: 30%; 
+  max-width: 300px;
+  margin-right: 40px;
+}
+
+.search-input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  flex-grow: 1;
+  color: #2F2F2F;
+  width: 100%; 
+}
+
+.search-icon {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  background-color: #D9D9D9;
+  border-radius: 25px;
+  padding: 5px 15px;
+}
+
+.user-info img {
+  margin-right: 10px;
+}
+
+.user-name {
+  color: #2F2F2F;
+  font-weight: bold;
+}
+
+.btn-login {
+  background-color: white;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+  
+  @media (max-width: 768px) {
+    .music-player {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      width: 100%;
+      background-color: #220039;
+      color: white;
+    }
+  
+    .song-title {
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  
+    .controls-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .controls-container button {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+  
+    .controls-container img {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .progress-container,
+    .volume-container,
+    .song-details {
+      display: none !important;
+    }
+    .song-title {
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  }
+  
+section.menu-open {
+  width: 70%;
+}
+
+section {
+  transition: width 0.3s ease-in-out;
+}
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+.btn.btn-custom {
+  background-color: #320048 !important; 
+  transition: background-color 0.3s ease-in-out;
+  color: white;
+}
+
+.btn.btn-custom:hover {
+  background-color: #5A007A !important; 
+  color: white;
+}
+
+.btn-contact {
+  background-color: #443B5C; 
+  color: white;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-contact:hover {
+  background-color: #5A4B7A; 
+  color: white;
+}
+
+
+.btn-profile {
+  background-color: #443B5C; 
+  color: white;
+  border: none;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-profile:hover {
+  background-color: #5A4B7A;
+  color: white;
+}
+
+
+.playlist-card {
+  padding: 10px;
+  background-color: #4B1960;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.playlist-card:hover {
+  background-color: #6A1B9A; 
+}
+
+.scroll-container {
+  scrollbar-width: thin;
+  scrollbar-color: #D781FF transparent; 
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #D781FF; 
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .playlist-section {
+    margin-left: 1px !important;
+    margin-right: auto !important;
+    text-align: justify;
+    max-width: 89%;
+}
+
+
+  .scroll-container {
+    max-width: 100%;
+    padding: 1px;
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 780px) {
+  .playlist-moods-container {
+    margin-left: -30px;
+    text-align: left;
+    max-width: 100%;
+  }
+
+  .texto-titulo {
+    margin-left: -30px;
+    margin-bottom: -15px; 
+  }
+
+  .scroll-container {
+    max-width: 100%;
+    padding: 1px;
+    justify-content: space-around;
+  }
+}
+
+
+
+/*-------------------------------------TRANSICIONES PARA LAS PAGINAS----------------------------------------*/
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
